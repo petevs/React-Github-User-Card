@@ -5,6 +5,7 @@ class UserCard extends React.Component {
 
     render(props) {
 
+        //If no user data display
         if(this.props.login === undefined){
             return(
                 <div className='card'>  
@@ -13,6 +14,7 @@ class UserCard extends React.Component {
             )
         } else {
 
+            //If follower button is set to 'display' show a button to set followers
             let followerButton;
             if(this.props.button === 'display') {
                     followerButton = <button value={this.props.login} onClick={this.props.handleClick}>See followers</button>
