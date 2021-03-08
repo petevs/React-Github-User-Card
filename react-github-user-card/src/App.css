@@ -1,0 +1,128 @@
+.App {
+  text-align: center;
+  background: #536976; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #292e49,
+    #536976
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #292e49,
+    #536976
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  min-height: 100vh;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.hero {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  gap: 1rem;
+  min-height: 150px;
+  color: #fff;
+}
+
+.search-box {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.25rem;
+}
+
+.search-box input {
+  padding: 0.5rem;
+  border-radius: 0.3rem;
+  box-shadow: rgba(42, 51, 83, 0.12) 0px 15px 35px 0px,
+    rgba(0, 0, 0, 0.06) 0px 5px 15px;
+  border: none;
+}
+
+.search-box button {
+  padding: 0.5rem;
+  font-size: 1rem;
+  background-color: #ede5a6;
+  border: none;
+  border-radius: 0.3rem;
+  font-weight: 600;
+  box-shadow: rgba(42, 51, 83, 0.12) 0px 15px 35px 0px,
+    rgba(0, 0, 0, 0.06) 0px 5px 15px;
+  border: none;
+  cursor: pointer;
+}
+
+.search-box button:hover {
+  background-color: #e8dd8e;
+}
+
+.card-wrapper {
+  display: grid;
+  grid-template-columns: minmax(auto, 345px);
+  padding: 1rem;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.5rem;
+  padding: 1rem;
+  justify-items: center;
+  align-items: center;
+  border-radius: 0.3rem;
+  box-shadow: rgba(42, 51, 83, 0.12) 0px 15px 35px 0px,
+    rgba(0, 0, 0, 0.06) 0px 5px 15px;
+  background-color: #fff;
+}
+
+.user-image {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  position: center;
+  border-radius: 50%;
+}
+
+.card-header {
+  display: grid;
+  justify-items: start;
+  width: 100%;
+}
+
+.card-header h3 {
+  font-size: 0.875rem;
+}
+
+.secondary {
+  font-size: 0.875rem;
+  color: rgba(0, 0, 0, 0.54);
+}
+
+.bio {
+  grid-column: 1 / span 2;
+  text-align: left;
+}
+
+.followers {
+  color: #fff;
+}
